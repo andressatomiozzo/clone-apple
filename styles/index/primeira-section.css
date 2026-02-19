@@ -1,0 +1,74 @@
+:root {
+  --cor01: #0077ed;
+  --cor02: #f5f5f7;
+  --cor03: #333333;
+  --cor04: #0066cc;
+
+  --fonte-titulos: "Inter", sans-serif;
+}
+
+h1 {
+  display: none;
+}
+
+#produtos-educação {
+  height: 625px;
+  background-image: url(../../img/back_ground_acessorios.jpg);
+  background-position: center;
+}
+
+#produtos-educação div {
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 50px;
+}
+
+.produtos-educação-texto {
+  font-size: 2rem;
+  width: 200px;
+  background-color: var(--cor01);
+  border-radius: 30px;
+  padding: 15px 35px;
+  color: white;
+  position: relative;
+}
+
+#produtos-educação h2::after {
+    content: url(../../img/MacBook_inicio.png);
+    position: absolute;
+    top: -25px;
+    right: -100px;
+}
+
+#produtos-educação h2::before {
+    content: url(../../img/iPad_inicio.png);
+    position: absolute;
+    top: 65px;
+    right: -50px;
+}
+
+#produtos-educação-desconto {
+  font-size: 1rem;
+  width: 240px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+#produtos-educação-acessorios,
+#produtos-educação-acessorios a {
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: var(--cor01);
+  color: white;
+}
+
+#produtos-educação-acessorios:before {
+    content: url(../../img/formando_inicio.png);
+    position: absolute;
+    left: -30px;
+    top: -20px;
+}

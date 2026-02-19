@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/index/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li>
-            <a href="index.html"><img src="img/icones/lupa.svg" alt="Logo da Apple" /></a>
+            <a href="index.html"><img src="img/icones/logo.svg" alt="Logo da Apple" /></a>
           </li>
           <li><a href="opss.html">Loja</a></li>
           <li><a href="opss.html">Mac</a></li>
@@ -32,39 +36,33 @@
       </nav>
     </header>
 
-    <h1 class="escondidovisualmente">Apple</h1>
+    <h1>Apple</h1>
 
     <main>
       <section>
-        <div>
-          <a href="opss.html">
-            <div>
-              <h2>Compre um Mac ou iPad para a faculdade</h2>
-              <p>com desconto para educação.</p>
-              <p>E escolha: AirPods ou um acessório<a href="#">*</a></p>
-              <button class="white-btn">Comprar</button>
-            </div>
-          </a>
+        <div id="produtos-educação">
+          <div>
+            <h2 class="produtos-educação-texto">Compre um Mac ou iPad para a faculdade</h2>
+            <p id="produtos-educação-desconto" class="produtos-educação-texto">com desconto para educação.</p>
+            <p id="produtos-educação-acessorios" class="produtos-educação-texto">E escolha: AirPods ou um acessório qualificado<a href="#">*</a></p>
+            <button class="white-btn">Comprar</button>
+          </div>
+        </div>
+
+        <div id="produtos-appleMusic">
+          <img src="img/icones/logo.svg" alt="Logo da Apple" />
+          <h2>Music</h2>
+          <p>Playlists de Carnaval, Apple Music Sing e Áudio Espacial. A concentração é aqui</p>
+          <button class="color-btn">Saiba mais</button>
         </div>
 
         <div>
-          <a href="opss.html">
-            <img src="img/icones/logo.svg" alt="Logo da Apple" />
-            <h2>Music</h2>
-            <p>Playlists de Carnaval, Apple Music Sing e Áudio Espacial. A concentração é aqui</p>
+          <div>
+            <h2>iPhone</h2>
+            <p>COnheça a nova geração do iPhone</p>
             <button class="color-btn">Saiba mais</button>
-          </a>
-        </div>
-
-        <div>
-          <a href="opss.html">
-            <div>
-              <h2>iPhone</h2>
-              <p>COnheça a nova geração do iPhone</p>
-              <button class="color-btn">Saiba mais</button>
-              <button class="white-btn">Comprar Iphone</button>
-            </div>
-          </a>
+            <button class="white-btn">Comprar Iphone</button>
+          </div>
         </div>
       </section>
 
