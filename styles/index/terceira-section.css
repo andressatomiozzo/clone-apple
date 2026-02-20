@@ -1,0 +1,152 @@
+/* ----------------------------------------------------
+! DISPOSIÇÃO DO CARROSSELL
+---------------------------------------------------- */
+
+.appleTV {
+  width: min(975px, 100%);
+  position: relative;
+  display: grid;
+  gap: 12px;
+  margin: auto;
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  transition: transform 350ms ease;
+  will-change: transform;
+}
+
+.track > div {
+  width: 100%;
+  flex: 0 0 100%;
+  display: block;
+}
+
+.btn {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 150px;
+  height: 550px;
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
+  background-color: rgba(199, 199, 199, 0.137);
+}
+
+.prev {
+  left: -160px;
+}
+.next {
+  right: -160px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+/* ----------------------------------------------------
+! DISPOSIÇÃO DOS ELEMENTOS FORA DO CARROSSELL
+---------------------------------------------------- */
+
+.appleTV-filmes {
+  width: 975px;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.appleTV-filmes div,
+.appleTV-filmes p,
+.appleTV-filmes a,
+.appleTV-filmes strong {
+  background-color: transparent;
+  color: white;
+}
+
+.appleTV-filmes > div {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.437));
+  height: 100%;
+}
+.appleTV-filmes > div > div {
+  display: grid;
+  grid-template-columns: 130px auto;
+  padding-top: 460px;
+  padding-left: 50px;
+  align-items: center;
+}
+
+.appleTV-filmes a {
+  grid-area: 1/1;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.appleTV-filmes a:hover {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.appleTV-filmes p {
+  margin-left: 20px;
+}
+
+/* --------------------------------------
+! IMAGENS DE BACK GROUND
+--------------------------------------- */
+
+#filme-eternidade {
+  background-image: url(../../img/carrossel/eternidade.jpg);
+}
+
+#filme-f1-o-filme {
+  background-image: url(../../img/carrossel/f1_o_filme.jpg);
+}
+
+#filme-falando-a-real {
+  background-image: url(../../img/carrossel/falando_a_real.jpg);
+}
+
+#filme-garotas-divinas {
+  background-image: url(../../img/carrossel/gotas_divinas.jpg);
+}
+
+#filme-pluribus {
+  background-image: url(../../img/carrossel/pluribus.jpg);
+}
+
+#filme-sequestro {
+  background-image: url(../../img/carrossel/sequestro.jpg);
+}
+
+#filme-teera {
+  background-image: url(../../img/carrossel/teera.jpg);
+}
