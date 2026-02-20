@@ -17,6 +17,39 @@ h1 {
   background-repeat: no-repeat;
 }
 
+.white-btn {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: var(--cor04);
+  text-align: center;
+  border: 1px solid var(--cor04);
+}
+
+.white-btn:hover {
+  color: white;
+  background-color: var(--cor01);
+  cursor: pointer;
+}
+
+.color-btn {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: var(--cor01);
+  color: white;
+  text-align: center;
+  border: 1.5px solid var(--cor04);
+}
+
+.color-btn:hover {
+  color: var(--cor04);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
 /* ! PRIMEIRA DIV */
 
 #produtos-educação {
