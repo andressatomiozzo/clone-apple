@@ -11,6 +11,8 @@ h1 {
   display: none;
 }
 
+/* ! PRIMEIRA DIV */
+
 #produtos-educação {
   height: 625px;
   background-image: url(../../img/back_ground_acessorios.jpg);
@@ -38,17 +40,17 @@ h1 {
 }
 
 #produtos-educação h2::after {
-    content: url(../../img/MacBook_inicio.png);
-    position: absolute;
-    top: -25px;
-    right: -100px;
+  content: url(../../img/MacBook_inicio.png);
+  position: absolute;
+  top: -25px;
+  right: -100px;
 }
 
 #produtos-educação h2::before {
-    content: url(../../img/iPad_inicio.png);
-    position: absolute;
-    top: 65px;
-    right: -50px;
+  content: url(../../img/iPad_inicio.png);
+  position: absolute;
+  top: 65px;
+  right: -50px;
 }
 
 #produtos-educação-desconto {
@@ -67,8 +69,44 @@ h1 {
 }
 
 #produtos-educação-acessorios:before {
-    content: url(../../img/formando_inicio.png);
-    position: absolute;
-    left: -30px;
-    top: -20px;
+  content: url(../../img/formando_inicio.png);
+  position: absolute;
+  left: -30px;
+  top: -20px;
+}
+
+/* -------------------------------------------------- */
+/* ! SEGUNDA DIV */
+/* -------------------------------------------------- */
+
+#produtos-appleMusic {
+  height: 625px;
+  background-image: url(../../img/back_ground_carnavalesco.png);
+  background-position: center;
+}
+
+#produtos-appleMusic h2,
+#produtos-appleMusic div,
+#produtos-appleMusic img,
+#produtos-appleMusic p {
+  background-color: transparent;
+}
+
+#produtos-appleMusic > div {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  margin: auto;
+}
+
+#produtos-appleMusic > div > div {
+  display: flex;
+  align-items: center;
+  margin-top: 380px;
+}
+
+#produtos-appleMusic h2 {
+  font-size: 3rem;
 }
