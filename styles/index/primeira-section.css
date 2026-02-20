@@ -11,12 +11,17 @@ h1 {
   display: none;
 }
 
+.produtos-first-section {
+  height: 575px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* ! PRIMEIRA DIV */
 
 #produtos-educação {
   height: 625px;
   background-image: url(../../img/back_ground_acessorios.jpg);
-  background-position: center;
 }
 
 #produtos-educação div {
@@ -80,9 +85,7 @@ h1 {
 /* -------------------------------------------------- */
 
 #produtos-appleMusic {
-  height: 625px;
   background-image: url(../../img/back_ground_carnavalesco.png);
-  background-position: center;
 }
 
 #produtos-appleMusic h2,
@@ -103,10 +106,51 @@ h1 {
 
 #produtos-appleMusic > div > div {
   display: flex;
-  align-items: center;
-  margin-top: 380px;
+  margin-top: 360px;
 }
 
 #produtos-appleMusic h2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+#produtos-appleMusic img {
+  width: 40px;
+  margin-top: -7px;
+}
+
+#produtos-appleMusic p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ---------------------------------- */
+/*! TERCEIRA DIV */
+/* ---------------------------------- */
+
+#produtos-iPhone {
+  background-image: url(../../img/back_ground_iPhones.jpg);
+  display: flex;
+}
+
+#produtos-iPhone h2,
+#produtos-iPhone p, 
+#produtos-iPhone div {
+  background-color: transparent;
+  text-align: center;
+}
+
+#produtos-iPhone div {
+  margin: 60px auto 0 auto;
+  height: 170px;
+}
+
+#produtos-iPhone h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+#produtos-iPhone p {
+  margin-bottom: 30px;
 }
