@@ -1,0 +1,72 @@
+footer {
+  max-width: 1000px;
+  margin: 30px auto;
+  font-size: 0.8rem;
+}
+
+footer p,
+footer a,
+footer li {
+  color: #838384;
+}
+
+#explicacoes-do-site li {
+  margin-top: 15px;
+}
+
+#explicacoes-do-site a {
+  text-decoration: underline;
+  color: #444445;
+}
+
+hr {
+  margin-top: 20px;
+  border: 1px solid rgb(217, 217, 217)
+}
+
+footer nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+footer > nav > section h3 {
+  margin: 20px 0 0 0;
+  color: #444445;
+  font-size: 0.77rem;
+  font-weight: 600;
+}
+
+footer > nav > section li {
+  margin-top: 7px;
+}
+
+#adicionais > div{
+    margin-top: 20px;
+}
+
+#p-right {
+    text-align: right;
+}
+
+#adicionais > div > p > a {
+      text-decoration: underline;
+  color: var(--cor01);
+}
+
+#adicionais ul {
+    display: flex;
+    margin-left: -10px;
+}
+
+#adicionais a {
+    margin: 2px;
+    padding: 10px;
+    color: #444445;
+}
+
+#adicionais ul > hr{
+    margin: auto 0;
+    height: 10px;
+}
