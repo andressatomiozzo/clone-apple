@@ -1,0 +1,80 @@
+:root {
+  --cor01: #0077ed;
+  --cor02: #f5f5f7;
+  --cor03: #333333;
+  --cor04: #0066cc;
+
+  --linkcolor: #06c;
+
+  --fonte-titulos: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--cor03);
+  background-color: var(--cor02);
+  font-family: var(--fonte-titulos);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor03);
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
+header nav,
+header ul,
+header li,
+header a,
+header img {
+  background-color: var(--cor02);
+}
+
+header div {
+  width: 100%;
+  background-color: var(--cor02);
+  position: fixed;
+  z-index: 3;
+}
+
+header ul {
+  max-width: 1000px;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 0.8rem;
+}
+
+.nav-icon{
+  /* height: 50px; */
+  padding: 0 15px;
+}
+
+#nav_logo{
+  width: 20px;
+}
+
+.viasualmente-escondido {
+  display: none;
+}

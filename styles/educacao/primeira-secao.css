@@ -1,0 +1,86 @@
+.span {
+  padding-top: 50px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.span span {
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.span a {
+  background-color: white;
+  color: var(--linkcolor);
+}
+
+.span a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.linha {
+  display: flex;
+  max-width: 1300px;
+  margin: 80px auto 40px auto;
+  justify-content: space-between;
+}
+
+.linha h1 {
+  width: 550px;
+  font-weight: 650;
+  font-size: 5rem;
+  color: #08827c;
+}
+
+.linha aside {
+  text-align: right;
+  width: 320px;
+  font-size: 1.3rem;
+}
+
+.linha h2 {
+  font-weight: 600;
+  padding: 10px;
+}
+
+.linha a {
+  color: var(--linkcolor);
+  display: inline-block;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+/* -------------------------------------------------
+! PRINCIPAIS PRODUTOS
+------------------------------------------------- */
+
+#principais-produtos-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+}
+
+.principais-produtos-content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 130px;
+  padding: 15px;
+}
+
+.principais-produtos-content h3 {
+  grid-area: 2/1;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.principais-produtos-content img {
+  width: 100%;
+}

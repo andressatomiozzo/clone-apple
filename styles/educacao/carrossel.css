@@ -1,0 +1,603 @@
+/* ---------------------------  GERAL   ----------------------------*/
+
+.carrossel-titulo {
+  max-width: 1300px;
+  margin: 80px auto 20px auto;
+}
+
+.carrossel-titulo h2 {
+  display: inline;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.carrossel-titulo span {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #6e6e73;
+}
+
+.carrossel {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  transition: transform 1s;
+}
+
+/* ---------------------------  OFERTAS   ----------------------------*/
+
+.ofertas-content {
+  display: block;
+  margin: 10px;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+
+.capelo::before {
+  content: " ";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-image: url(../../img/icones/school_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
+  background-size: cover;
+}
+
+.ofertas-content h3,
+.ofertas-content p,
+.ofertas-content span,
+.ofertas-content div {
+  background-color: transparent;
+}
+
+.ofertas-content div {
+  padding: 30px;
+}
+
+.ofertas-content h3 {
+  text-transform: uppercase;
+  color: #b64400;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.ofertas-content p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.span-normal {
+  display: block;
+  font-size: 0.85rem;
+  padding-top: 15px;
+}
+
+.span-colorido-degrade {
+  background-image: linear-gradient(108deg, #0079d0 0, #9e52d8 32%, #da365c 84%, #d04901 100%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  width: fit-content;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  z-index: 3;
+  border-radius: 100px;
+  border: 2px solid #e8e8e87f;
+  background-color: #e8e8e87f;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #3a3a3ad1;
+  display: block;
+}
+
+.btn:hover {
+  border: 2px solid #9f9f9fd1;
+}
+
+.prev {
+  left: -70px;
+}
+
+.next {
+  right: -20px;
+}
+
+#oferta-bannerGeral {
+  background-image: url(../../img/img-educacao/ofertas/store-card-40-bts-offer-featured-202505_GEO_BR.png);
+  background-size: contain;
+}
+
+#oferta-bannerGeral p {
+  padding: 55px 30px 30px 30px;
+}
+
+#oferta-iPadAir {
+  background-image: url(../../img/img-educacao/ofertas/store-card-40-bts-ipad-air-202505_GEO_BR.png);
+  background-size: contain;
+}
+
+#oferta-macBook {
+  background-image: url(../../img/img-educacao/ofertas/store-card-40-bts-macbook-air-202505_GEO_BR.png);
+  background-size: contain;
+}
+
+#oferta-macBookPro {
+  background-image: url(../../img/img-educacao/ofertas/store-card-40-bts-macbook-pro-202505.jpeg);
+  background-size: contain;
+}
+
+#ofertas-iPadPro {
+  background-image: url(../../img/img-educacao/ofertas/store-card-40-bts-ipad-pro-202505_GEO_BR.jpeg);
+  background-size: contain;
+}
+
+#ofertas-iMac {
+  background-image: url(../../img/img-educacao/ofertas/store-card-40-bts-imac-202505_GEO_BR.jpeg);
+  background-size: contain;
+}
+
+/* ---------------------------  DESCONTOS   ----------------------------*/
+
+.descontos-content {
+  display: block;
+  margin: 10px;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+}
+
+.descontos-content h3,
+.descontos-content p,
+.descontos-content span,
+.descontos-content div {
+  background-color: transparent;
+}
+
+.descontos-comH3 {
+  padding: 30px;
+}
+.descontos-semH3 {
+  padding: 46px 30px 30px 30px;
+}
+
+.descontos-content h3 {
+  text-transform: uppercase;
+  color: #424245;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.descontos-content p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-top: 8px;
+}
+
+.descontos-content span {
+  padding-top: 10px;
+  font-size: 1.1rem;
+}
+
+#descontos-bannerGeral {
+  background-image: url(../../img/img-educacao/sobre-descontos/store-card-40-bts-savings-202505.png);
+  background-size: contain;
+}
+
+#descontos-appleMusic {
+  background-image: url(../../img/img-educacao/sobre-descontos/store-card-40-bts-apple-music-tv-202505.jpeg);
+  background-size: cover;
+}
+
+#descontos-parcelado {
+  background-image: url(../../img/img-educacao/sobre-descontos/store-card-40-bts-financing-202505.jpeg);
+  background-size: cover;
+}
+
+#descontos-personalizado {
+  background-image: url(../../img/img-educacao/sobre-descontos/store-card-40-bts-customize-202505.jpeg);
+  background-size: cover;
+}
+
+#descontos-creator {
+  background-image: url(../../img/img-educacao/sobre-descontos/store-card-40-bts-apple-creator-studio-202601.jpeg);
+  background-size: cover;
+}
+
+#descontos-creator p,
+#descontos-creator h3,
+#descontos-creator span {
+  color: white;
+}
+
+#descontos-especialistas {
+  background-image: url(../../img/img-educacao/sobre-descontos/store-card-40-bts-specialist-202505.jpeg);
+  background-size: cover;
+}
+
+/* ---------------------------  ACESSÓRIOS   ----------------------------*/
+
+.acessorios-content {
+  display: block;
+  margin: 10px;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.acessorios-content div {
+  border-radius: 20px;
+}
+
+.acessorios-content h3,
+.acessorios-content p,
+.acessorios-content span,
+.acessorios-content div,
+.acessorios-content {
+  background-color: white;
+}
+
+.acessorios-content > div:nth-of-type(2) {
+  padding: 5px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.acessorios-content > div:nth-of-type(1) {
+  height: 300px;
+  padding: 30px;
+}
+
+.acessorios-content > div:nth-of-type(1) > div {
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.acessorios-content p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-top: 24px;
+}
+
+/*! ---------------------- QUEBRAR FRASE NO MEIO -------------------------- */
+
+.acessorios-content h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* número de linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.acessorios-content span {
+  padding-top: 10px;
+}
+
+.span-novo {
+  color: #b64400;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  padding-left: 30px;
+}
+
+#acessorios-bannerGeral {
+  justify-content: start;
+  background-image: url(../../img/img-educacao/acessorios/store-card-40-bts-accessories-202505_GEO_BR.jpeg);
+  background-size: cover;
+}
+
+#acessorios-bannerGeral div {
+  background-color: transparent;
+}
+
+#acessorios-applePencilPro {
+  background-image: url(../../img/img-educacao/acessorios/MX2D3.jpeg);
+}
+
+#acessorios-appleKeyboard {
+  background-image: url(../../img/img-educacao/acessorios/MGYY4.jpeg);
+}
+
+#acessorios-appleAirPodsPro {
+  background-image: url(../../img/img-educacao/acessorios/airpods-pro-3-hero-select-202509.jpeg);
+}
+
+#acessorios-appleMagSafe {
+  background-image: url(../../img/img-educacao/acessorios/MGFJ4.jpeg);
+}
+
+#acessorios-applePencil {
+  background-image: url(../../img/img-educacao/acessorios/MUWA3.jpeg);
+}
+
+#acessorios-pulseiraLoop {
+  background-image: url(../../img/img-educacao/acessorios/MHUK4ref.jpeg);
+}
+
+#acessorios-appleKeyboardIPadPro {
+  background-image: url(../../img/img-educacao/acessorios/MWR53.jpeg);
+}
+
+#acessorios-appleAirTag {
+  background-image: url(../../img/img-educacao/acessorios/airtag-1pack-select-202601.jpeg);
+}
+
+#acessorios-appleAdaptador {
+  background-image: url(../../img/img-educacao/acessorios/MNWP3_GEO_BR.jpeg);
+}
+
+/* -----------------------------------  ALEM ------------------------------------ */
+
+.alem-content {
+  display: block;
+  margin: 10px;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.alem-content div {
+  border-radius: 20px 20px 0 0;
+}
+
+.alem-content h3,
+.alem-content p,
+.alem-content span,
+.alem-content div {
+  background-color: transparent;
+}
+
+.alem-comH3 {
+  border-radius: 20px;
+
+  padding: 30px;
+}
+.alem-semH3 {
+  padding: 46px 30px 30px 30px;
+}
+
+.alem-content h3 {
+  text-transform: uppercase;
+  color: #424245;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.alem-content p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+.alem-content span {
+  display: inline-block;
+  padding-top: 13px;
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+#alem-universidade h3,
+#alem-universidade p,
+#alem-universidade span {
+  color: white;
+}
+
+#alem-universidade {
+  background-image: url(../../img/img-educacao/alem-da-apple/store-card-50-edu-apple-college-202404.jpeg);
+}
+
+#alem-professores {
+  background-image: url(../../img/img-educacao/alem-da-apple/store-card-50-edu-community-202404_GEO_BR.jpeg);
+}
+
+#alem-estudantes {
+  background-image: url(../../img/img-educacao/alem-da-apple/store-card-40-edu-success-202404_GEO_BR.jpeg);
+  background-position-y: -45px;
+}
+
+#alem-criar {
+  background-image: url(../../img/img-educacao/alem-da-apple/store-card-40-edu-swift-202510.jpeg);
+}
+
+#alem-carreira {
+  background-image: url(../../img/img-educacao/alem-da-apple/store-card-40-edu-careers-202404.jpeg);
+}
+
+/* ---------------------------- Outros produtos ------------------------- */
+
+.outrosProdutos-content {
+  display: block;
+  margin: 10px;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.outrosProdutos-content div {
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  width: 330px;
+  margin: 50px auto 0 auto;
+}
+
+.outrosProdutos-content h3,
+.outrosProdutos-content p,
+.outrosProdutos-content span,
+.outrosProdutos-content div {
+  background-color: transparent;
+  color: black;
+}
+
+.outrosProdutos-content h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.outrosProdutos-content span:nth-of-type(1) {
+  display: block;
+  font-weight: 600;
+}
+
+.outrosProdutos-content span:nth-of-type(2) {
+  display: block;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+.outrosProdutos-fundoPreto h3,
+.outrosProdutos-fundoPreto span {
+  color: white;
+}
+
+#outrosProdutos-iPhone17Pro {
+  background-image: url(../../img/img-educacao/outros-produtos/store-card-40-iphone-17-pro-202509.jpeg);
+}
+
+#outrosProdutos-iPhoneAir {
+  background-image: url(../../img/img-educacao/outros-produtos/store-card-40-iphone-air-202509.jpeg);
+}
+
+#outrosProdutos-iPhone17 {
+  background-image: url(../../img/img-educacao/outros-produtos/store-card-40-iphone-17-202509.jpeg);
+}
+
+#outrosProdutos-watchSeries11 {
+  background-image: url(../../img/img-educacao/outros-produtos/store-card-40-watch-s11-202509_GEO_BR.jpeg);
+}
+
+#outrosProdutos-watchSE3 {
+  background-image: url(../../img/img-educacao/outros-produtos/store-card-40-watch-se-202509_GEO_BR.jpeg);
+}
+
+#outrosProdutos-watchUltra3 {
+  background-image: url(../../img/img-educacao/outros-produtos/store-card-40-watch-ultra-202509_GEO_BR.jpeg);
+}
+
+#outrosProdutos-AirPodsPro3 {
+  background-image: url(../../img/img-educacao/outros-produtos/store-card-40-edu-airpods-pro-202509.jpeg);
+}
+
+/* ---------------------------- Outros produtos ------------------------- */
+
+.outrosServicos-content {
+  display: block;
+  margin: 10px;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.outrosServicos-content div {
+  border-radius: 20px 20px 0 0;
+}
+
+.outrosServicos-comH3 {
+  border-radius: 20px;
+  padding: 30px;
+}
+.outrosServicos-semH3 {
+  padding: 46px 30px 30px 30px;
+}
+
+.outrosServicos-content h3,
+.outrosServicos-content p,
+.outrosServicos-content span,
+.outrosServicos-content div {
+  background-color: transparent;
+  color: black;
+}
+
+.outrosServicos-content h3 {
+  text-transform: uppercase;
+  color: #424245;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.outrosServicos-content p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.outrosServicos-content span {
+  display: inline-block;
+  padding-top: 13px;
+  font-size: 1.1rem;
+  font-weight: 350;
+}
+
+#outrosServicos-AppleIntelligence div {
+  padding: 46px 30px 30px 30px;
+}
+
+/* ! ---------------------  Gradiente na fonte ----------------------- */
+
+#outrosServicos-AppleIntelligence h3 {
+  text-transform: none;
+  font-size: 2rem;
+  font-weight: 600;
+  background-image: linear-gradient(108deg, #0079d0 0, #9e52d8 32%, #da365c 84%, #d04901 100%);
+  background-clip: text; /* Até onde o background vai  */
+  color: transparent; /* Cor do texto */
+  display: inline-block;
+}
+
+#outrosServicos-AppleIntelligence {
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-applecare-202509.jpeg);
+}
+
+#outrosServicos-sessaoGratuita {
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-taa-202505.jpeg);
+}
+
+#outrosServicos-appleCare {
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-apple-intelligence-202510_GEO_BR.jpeg);
+}
+
+#outrosServicos-musicTV {
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-taa-202505.jpeg);
+}
