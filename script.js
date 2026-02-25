@@ -30,3 +30,16 @@ const goto = (i) => {
 
 prevBtn.addEventListener("click", () => goto(index - 1));
 nextBtn.addEventListener("click", () => goto(index + 1));
+
+// ! ----------------------------  Menu Hambúrguer -------------------------
+
+const headderItens = document.querySelector("#headder-itens");
+const burguer = document.querySelector("#burguer");
+
+burguer.addEventListener("click", () => {
+  if (headderItens.style.display === "flex") {
+    headderItens.style.display = "none";
+  } else {
+    headderItens.style.display = "flex";
+  }
+});

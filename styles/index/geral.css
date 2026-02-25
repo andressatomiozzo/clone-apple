@@ -4,7 +4,11 @@
   --cor03: #333333;
   --cor04: #0066cc;
 
+  --linkcolor: #06c;
+
   --fonte-titulos: "Inter", sans-serif;
+
+  --modo: 3;
 }
 
 * {
@@ -13,6 +17,10 @@
   color: var(--cor03);
   background-color: var(--cor02);
   font-family: var(--fonte-titulos);
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1,
@@ -31,19 +39,17 @@ ul {
   list-style-type: none;
 }
 
-
-
 header nav,
 header ul,
 header li,
 header a,
 header img {
-  background-color: white;
+  background-color: var(--cor02);
 }
 
-header div {
+header > nav > div {
   width: 100%;
-  background-color: white;
+  background-color: var(--cor02);
   position: fixed;
   z-index: 3;
 }
@@ -57,6 +63,11 @@ header ul {
   align-items: center;
 }
 
+header ul > div {
+  display: flex;
+  z-index: 2;
+}
+
 header a {
   display: flex;
   align-items: center;
@@ -64,15 +75,48 @@ header a {
   font-size: 0.8rem;
 }
 
-.nav-icon{
+.nav-icon {
   /* height: 50px; */
   padding: 0 15px;
 }
 
-#nav_logo{
+#nav_logo {
   width: 20px;
 }
 
 .viasualmente-escondido {
   display: none;
+}
+
+#burguer {
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  padding: 0 15px;
+}
+
+#burguer img {
+  display: block;
+  width: 20px;
+}
+
+@media (max-width: 930px) {
+  #burguer {
+    display: block;
+  }
+
+  #headder-itens {
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    margin: 50px -140px 0 auto;
+    z-index: 2;
+  }
+
+  header ul {
+    max-width: 100%;
+    justify-content: space-between;
+  }
 }

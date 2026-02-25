@@ -1,7 +1,7 @@
 /* ---------------------------  GERAL   ----------------------------*/
 
 .carrossel-titulo {
-  max-width: 1300px;
+  max-width: 1580px;
   margin: 80px auto 20px auto;
 }
 
@@ -17,15 +17,17 @@
   color: #6e6e73;
 }
 
-.carrossel {
+.carrossel,
+.carrossel-largo {
   display: flex;
-  max-width: 1300px;
+  max-width: 1600px;
   margin: auto;
   position: relative;
 }
 
 .track {
   display: flex;
+  justify-content: space-around;
   transition: transform 1s;
 }
 
@@ -99,7 +101,7 @@
   height: 50px;
   position: absolute;
   top: 250px;
-  z-index: 3;
+  z-index: 1;
   border-radius: 100px;
   border: 2px solid #e8e8e87f;
   background-color: #e8e8e87f;
@@ -522,7 +524,7 @@
   display: block;
   margin: 10px;
   height: 500px;
-  width: 400px;
+  width: 500px;
   border-radius: 20px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
   background-size: cover;
@@ -587,7 +589,7 @@
 }
 
 #outrosServicos-AppleIntelligence {
-  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-applecare-202509.jpeg);
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-apple-intelligence-202510_GEO_BR.jpeg);
 }
 
 #outrosServicos-sessaoGratuita {
@@ -595,9 +597,61 @@
 }
 
 #outrosServicos-appleCare {
-  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-apple-intelligence-202510_GEO_BR.jpeg);
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-applecare-202509.jpeg);
 }
 
 #outrosServicos-musicTV {
-  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-taa-202505.jpeg);
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-edu-apple-music-202404.jpeg);
+}
+
+#outrosServicos-5Em1 {
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-subscriptions-202108_GEO_BR.jpeg);
+}
+
+#outrosServicos-iCloud {
+  background-image: url(../../img/img-educacao/outros-servicos/store-card-50-icloud-202509_GEO_BR.jpeg);
+}
+
+/* ! -----------------------------  LINKS RÁPIDOS ------------------------*/
+
+.linksRapidos-Links {
+  width: 1600px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.linksRapidos-Links a {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+
+/* ! --------------------------  RESPONSIVIDADE  -------------------------*/
+
+@media (max-width: 1700px) {
+  .carrossel-titulo {
+    max-width: 1300px;
+    margin-left: 20px;
+  }
+
+  .carrossel,
+  .carrossel-largo {
+    max-width: 1300px;
+    margin-left: 20px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 1350px) {
+  :root {
+    --modo: 2;
+  }
 }
