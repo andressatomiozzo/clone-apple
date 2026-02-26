@@ -13,7 +13,6 @@ carrossseis.forEach((root) => {
 
   const update = () => {
     track.style.transform = `translateX(-${index * 420}px)`;
-    console.log(index);
     index === 0 ? (prevBtn.style.display = "none") : (prevBtn.style.display = "block");
     index >= indexTotal ? (nextBtn.style.display = "none") : (nextBtn.style.display = "block");
   };
@@ -44,7 +43,6 @@ carrossseisLargo.forEach((root) => {
 
   const update = () => {
     track.style.transform = `translateX(-${index * 520}px)`;
-    console.log(index);
     index === 0 ? (prevBtn.style.display = "none") : (prevBtn.style.display = "block");
     index >= indexTotal ? (nextBtn.style.display = "none") : (nextBtn.style.display = "block");
   };
@@ -77,13 +75,21 @@ burguer.addEventListener("click", () => {
 
 // ! ----------------------------  FOOTER -------------------------
 
-const footerItems = document.querySelector("#footer-items");
-const footerH3 = document.querySelector("#footer-h3");
+const footerNavContent = document.querySelectorAll(".footerNav-content");
 
-footerH3.addEventListener("click", () => {
-  if (footerItems.style.display === "flex") {
-    footerItems.style.display = "none";
-  } else {
-    footerItems.style.display = "flex";
-  }
+footerNavContent.forEach((item) => {
+  const footerItems = item.querySelector(".footer-items");
+  const footerH3 = item.querySelector(".footer-h3");
+
+  if (!footerItems) throw new Error("Dom items não está ligado");
+  if (!footerH3) throw new Error("h3 não está ligado");
+
+  footerH3.addEventListener("click", () => {
+    if (footerItems.style.display === "block") {
+      footerItems.style.display = "none";
+    } else {
+      footerItems.style.display = "block";
+    }
+  });
 });
+

@@ -1,6 +1,7 @@
 footer {
   max-width: 1000px;
   margin: 30px auto;
+  padding: 0 20px;
   font-size: 0.8rem;
 }
 
@@ -53,6 +54,7 @@ footer > nav > section li {
 #adicionais > div > p > a {
   text-decoration: underline;
   color: var(--cor01);
+  padding: 0;
 }
 
 #adicionais ul {
@@ -69,4 +71,30 @@ footer > nav > section li {
 #adicionais ul > hr {
   margin: auto 0;
   height: 10px;
+}
+
+@media (max-width: 900px) {
+  footer nav {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  footer h3 {
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+  }
+
+  footer h3::after {
+    content: url(../../img/icones/keyboard_arrow_down_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
+    position: absolute;
+    top: -3px;
+    right: 20px;
+  }
+
+  footer nav ul {
+    display: none;
+    transition: transform 0.5s;
+  }
+
 }

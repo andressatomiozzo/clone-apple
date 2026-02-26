@@ -54,6 +54,7 @@ footer > nav > section li {
 #adicionais > div > p > a {
   text-decoration: underline;
   color: var(--cor01);
+  padding: 0;
 }
 
 #adicionais ul {
@@ -81,6 +82,7 @@ footer > nav > section li {
   footer h3 {
     font-weight: 700;
     position: relative;
+    cursor: pointer;
   }
 
   footer h3::after {
@@ -92,5 +94,7 @@ footer > nav > section li {
 
   footer nav ul {
     display: none;
+    transition: transform 0.5s;
   }
+
 }

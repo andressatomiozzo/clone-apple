@@ -43,3 +43,23 @@ burguer.addEventListener("click", () => {
     headderItens.style.display = "flex";
   }
 });
+
+// ! ----------------------------  FOOTER -------------------------
+
+const footerNavContent = document.querySelectorAll(".footerNav-content");
+
+footerNavContent.forEach((item) => {
+  const footerItems = item.querySelector(".footer-items");
+  const footerH3 = item.querySelector(".footer-h3");
+
+  if (!footerItems) throw new Error("Dom items não está ligado");
+  if (!footerH3) throw new Error("h3 não está ligado");
+
+  footerH3.addEventListener("click", () => {
+    if (footerItems.style.display === "block") {
+      footerItems.style.display = "none";
+    } else {
+      footerItems.style.display = "block";
+    }
+  });
+});
